@@ -1,4 +1,5 @@
 const pkg = require('./package')
+require('dotenv').config() // Without this .env variables will not be available in the nuxt.config.js file.
 
 module.exports = {
     mode: 'universal',
@@ -41,7 +42,8 @@ module.exports = {
     */
     modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
     ],
     /*
     ** Axios module configuration
