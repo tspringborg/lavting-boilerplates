@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const contentful = require('contentful')
 
 module.exports = {
     mode: 'universal',
